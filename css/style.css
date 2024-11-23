@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +10,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    /* justify-content: space-between; */
 }
 
 
@@ -21,7 +22,10 @@ footer {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    flex: 1;
+}
+
+main>* {
     flex: 1;
 }
 
@@ -37,10 +41,20 @@ footer p {
     color: #E5E7EB;
 }
 
+
+
 h1 {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
+}
+
+h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: center;
+    margin: 42px 0;
 }
 
 button,
@@ -48,7 +62,25 @@ button,
     background-color: #3882F6;
 }
 
+.quote {
+    background-color: #E5E7EB;
+}
+
 .thecall {
     display: flex;
     color: white;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.gallery img {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+
 }
