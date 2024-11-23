@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* justify-content: space-between; */
+}
+
+
+
+header,
+footer {
+    background-color: #1F2937;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 0;
+}
+
+header p,
+header a,
+footer p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+button,
+.thecall {
+    background-color: #3882F6;
+}
+
+.thecall {
+    display: flex;
+    color: white;
+}
