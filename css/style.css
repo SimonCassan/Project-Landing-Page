@@ -32,14 +32,17 @@ footer p {
     color: #E5E7EB;
 }
 
+footer {
+    text-align: center;
+    padding: 25px 0;
+}
+
 /* ------------------Navbar------------------- */
 nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5em;
 }
-
-/* Navbar header */
 
 
 /*  Navbar right-side links */
@@ -56,16 +59,17 @@ nav li:last-of-type {
     padding-right: 0;
 }
 
+/* Content */
 
 .header_content {
     display: flex;
     align-items: center;
     max-height: 60%;
+    gap: 10%;
 }
 
 .header_text {
     width: 60%;
-    padding-right: 2em;
     text-align: justify;
 }
 
@@ -101,13 +105,6 @@ main>* {
     flex: 1;
 }
 
-footer {
-    text-align: center;
-    padding: 25px 0;
-}
-
-
-
 
 /* ------------------Elements------------------- */
 
@@ -124,6 +121,11 @@ a {
     text-decoration: none;
 }
 
+button {
+    border-radius: 0.5em;
+    padding: 10px 45px;
+    color: white;
+}
 
 blockquote {
     font-style: italic;
@@ -158,12 +160,6 @@ button,
     background-color: #3882F6;
 }
 
-button {
-    border-radius: 0.5em;
-    padding: 10px 45px;
-    color: white;
-}
-
 .thecall {
     display: flex;
     justify-content: space-between;
@@ -184,12 +180,11 @@ button {
     white-space: nowrap;
 }
 
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2em;
+    gap: 4em;
 }
 
 .gallery img {
