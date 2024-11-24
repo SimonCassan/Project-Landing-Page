@@ -81,6 +81,6 @@ button,
 .gallery img {
     width: 250px;
     height: 200px;
-    object-fit: contain;
+    object-fit: cover;
 
 }
