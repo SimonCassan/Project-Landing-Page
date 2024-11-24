@@ -3,16 +3,14 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body {
-    max-width: 1150px;
-    margin: auto;
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    max-height: 100vh;
 }
 
 header {
@@ -34,11 +32,13 @@ footer p {
     color: #E5E7EB;
 }
 
+/* ------------------Navbar------------------- */
 nav {
     display: flex;
     justify-content: space-between;
 }
 
+/* Navbar header */
 .nav_heading {
     display: flex;
     justify-content: space-between;
@@ -54,8 +54,22 @@ nav {
 
 }
 
+/*  Navbar right-side links */
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 0 15px;
+}
+
+nav li:last-of-type {
+    padding-right: 0;
+}
 
 
+/* ------------------Main------------------- */
 
 main {
     display: flex;
@@ -75,7 +89,7 @@ footer {
 
 
 
-
+/* ------------------Elements------------------- */
 
 
 h1 {
@@ -92,17 +106,37 @@ h2 {
     margin: 42px 0;
 }
 
-ul {
-    list-style-type: none;
+a {
+    text-decoration: none;
 }
 
-li {
-    display: inline;
+
+blockquote {
+    font-style: italic;
+    text-align: justify;
+    font-size: 1.4em;
     padding: 15px 0;
 }
 
-a {
-    text-decoration: none;
+blockquote+p {
+    font-weight: 900;
+    font-size: 1.2em;
+    text-align: end;
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.quote div {
+    max-width: 60%;
+}
+
+.quote {
+    background-color: #E5E7EB;
 }
 
 button,
@@ -110,14 +144,33 @@ button,
     background-color: #3882F6;
 }
 
-.quote {
-    background-color: #E5E7EB;
+button {
+    padding: 5px 25px;
+    color: white;
 }
 
 .thecall {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: white;
+    border-radius: 0.5em;
+    padding: 2% 8%;
+    margin: 5% 15%;
 }
+
+.thecall div {
+    max-width: 70%;
+    margin-right: 15%;
+}
+
+.thecall button {
+    border: 1px solid white;
+    border-radius: 0.5em;
+    padding: 10px 45px;
+    white-space: nowrap;
+}
+
 
 .gallery {
     display: flex;
@@ -131,4 +184,8 @@ button,
     height: 200px;
     object-fit: cover;
 
+}
+
+section:has(.gallery) {
+    margin-bottom: 80px;
 }
